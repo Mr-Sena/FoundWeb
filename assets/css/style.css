@@ -1,0 +1,67 @@
+/*
+
+SELETOR DE CLASSE: HASHTAG (#)
+SELETOR DE ID: PONTO (.)
+Estilo da página index.html
+*/
+
+.center{
+    text-align: center;
+}
+
+.justify {
+    text-align: justify
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center; /*Alinhamento horizontal*/
+    align-items: center; /*Alinhamento vertical*/
+}
+
+#menu li {
+    display: inline;
+    padding: 15px;
+    text-decoration: none; /*Esse código não surtir o efeito esperado, para isso é necessário permeiar mais uma camada; acompanha abaixo.*/
+}
+
+#menu li a {
+    text-decoration:none;
+    color:#be2edd;
+    font-size: 20px;
+}
+
+#menu li a:hover {
+    color: grey;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.format {
+    width: 250px;
+    height: 250px;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+}
+
+.mb-50{
+    margin-bottom: 70px;
+}
+
+.margem-left {
+    margin-left: 50px;
+}
+/*
+Estilo da página contato.html
+*/

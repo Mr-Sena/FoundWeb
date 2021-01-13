@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil</title>
+
+    <style>
+
+        /*# → Seletor de id*/
+        #p1 {
+            font-size: 20px;
+        }
+
+        /*Seletor de class
+        .center {
+            text-align: center;
+        }
+
+        O Códio acima vai ficar como um exemplo de codificação interna, a mesma função vai ser importado do externo na tag link, logo abaixo ↓
+        */
+    </style>
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
@@ -20,26 +38,51 @@
 
     <h1>Sobre o JP</h1>
 
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum voluptate, aspernatur dolores velit esse deserunt veritatis enim doloribus accusamus quaerat explicabo unde sapiente quidem eveniet maxime saepe nesciunt corporis reprehenderit.
-    </p>
+    <div class="container mb-50">
+        <div>
+            <img class="br-50 format p-30" src="assets/img/MyImage.jpg " alt = "Foto do criador desse conteúdo ">
+        </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reiciendis repudiandae ut distinctio iure dicta earum ducimus vel, doloribus nisi, in sapiente molestiae architecto, laboriosam aliquam a voluptatum minima? Repellendus?</p>
+        <div class="p-30">
+                <!--Para alterar as propriedades somente desse parágrafo, o id será a chave para a atribuição, nesse caso o seu seletor no CSS será #
+            Já o seletor de classe é o . (ponto)
+            Diferença básica entre ID e Class: id é somente para um elemento; agora a classe pode ser relacionada à varios elementos.-->
+            <p id="p1", class="justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum voluptate, aspernatur dolores velit esse deserunt veritatis enim doloribus accusamus quaerat explicabo unde sapiente quidem eveniet maxime saepe nesciunt corporis reprehenderit.
+            </p>
 
-    <img src="assets/img/MyImage.jpg " alt = "Foto do criador desse conteúdo ">
+            <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reiciendis repudiandae ut distinctio iure dicta earum ducimus vel, doloribus nisi, in sapiente molestiae architecto, laboriosam aliquam a voluptatum minima? Repellendus?</p>
+        </div>
+    </div>
+    
 
-    <h2>Documentário: </h2>
+    <div class="center">
+        <h2>Documentário: </h2>
+        <iframe 
+        class="mb-50"
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/ZEThrCpAT94" 
+        frameborder="10" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        ></iframe>
+    </div>
 
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/ZEThrCpAT94" 
-    frameborder="10" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen
-    ></iframe>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-sena-64a3b11a0/" target="_blank">
+                <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do linkedin">
+            </a>
 
-    Importante: Aperte Alt + Z para quebra de linha automática no vsCode
+        </div>
+
+        <p class="center"> Todos os direitos reservado: João Pedro &copy </p>
+    </footer>
+
+    <!--Importante: Aperte Alt + Z para quebra de linha automática no vsCode-->
 
 </body>
+
 </html>
